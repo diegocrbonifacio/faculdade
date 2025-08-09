@@ -1,0 +1,137 @@
+:root {
+    --bg-color-main: #e0e6ed;
+    --bg-color-navbar: #fff;
+    --text-color: #333;
+    --text-color-navbar: #555;
+    --card-bg-color: #fff;
+    --primary-color: #4a69bd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme {
+    --bg-color-main: #1c2a38;
+    --bg-color-navbar: #2c3e50;
+    --text-color: #e0e6ed;
+    --text-color-navbar: #ccc;
+    --card-bg-color: #3b526d;
+    --primary-color: #72a4e4;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color-main);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--bg-color-navbar);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-right: 30px;
+}
+
+.user-info {
+    font-weight: bold;
+    color: var(--text-color-navbar);
+    margin-right: 15px;
+}
+
+.logout-link {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}
+
+.theme-toggle-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: var(--text-color-navbar);
+    transition: color 0.3s ease;
+}
+
+.main-content {
+    padding: 20px 30px;
+}
+
+.main-content h1 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.treino-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+}
+
+.treino-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.treino-card h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.treino-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card-link {
+    align-self: flex-start;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: #3b5299;
+}

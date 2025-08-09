@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="barra-nav">
+    <nav class="nav-esquerda">
+      <div class="logo">Logo</div>
+      <a href="/oi/treinos.html" class="link-nav">Home</a>
+      <a href="#" class="link-nav">Sobre Nós</a>
+    </nav>
+    <nav class="nav-direita">
+      <button id="botao-tema" class="botao-tema">
+        <span id="icone-tema">&#x2600;&#xFE0F;</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="area-principal">
+    <section class="container-formulario">
+      <div class="abas-formulario">
+        <button id="aba-login" class="botao-aba ativo">Login</button>
+        <button id="aba-cadastro" class="botao-aba">Criar Conta</button>
+      </div>
+
+      <form id="form-login" class="caixa-formulario ativo-formulario">
+        <h2 class="titulo-formulario">Login</h2>
+        <div class="grupo-input">
+          <label for="login-email">Email:</label>
+          <input type="email" id="login-email" required>
+        </div>
+        <div class="grupo-input">
+          <label for="login-senha">Senha:</label>
+          <input type="password" id="login-senha" required>
+        </div>
+        <button type="submit" class="botao-enviar">Entrar</button>
+      </form>
+
+      <form id="form-cadastro" class="caixa-formulario">
+        <h2 class="titulo-formulario">Criar Conta</h2>
+        <div class="grupo-input">
+          <label for="cadastro-nome">Nome Completo:</label>
+          <input type="text" id="cadastro-nome" required>
+        </div>
+        <div class="grupo-input">
+          <label for="cadastro-email">Email:</label>
+          <input type="email" id="cadastro-email" required>
+        </div>
+        <div class="grupo-input">
+          <label for="cadastro-senha">Senha:</label>
+          <input type="password" id="cadastro-senha" required>
+        </div>
+        <button type="submit" class="botao-enviar">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
